@@ -2,7 +2,6 @@ FROM openjdk:8-jdk-alpine
 
 WORKDIR /app
 
-copy primeNumber.jar .
-copy file.txt .
+copy . .
 
 ENTRYPOINT ["java","-jar","primeNumber.jar"]
